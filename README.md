@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# aryan-vashishth.ts
 
-## Getting Started
+Personal portfolio of **Aryan Vashishth** — full-stack engineer & agentic AI builder.
 
-First, run the development server:
+The whole site pretends to be a TypeScript project open in a code editor: five
+permanently-open file tabs (`home.ts`, `skills.ts`, `experience.ts`,
+`projects.ts`, `contact.ts`), a line-number gutter, and a procedurally
+generated ASCII comment-block texture behind every page. Design homage to
+[finethought.com.au](https://finethought.com.au), rebuilt from scratch with a
+tab-first information architecture.
+
+## Stack
+
+- **Next.js 16** (App Router, static export) + TypeScript
+- **Motion** (framer-motion) — reveals, expansions, giant-word parallax
+- **next/font** — Archivo (display) + Fragment Mono (code voice), self-hosted
+- Hand-rolled CSS design system (`src/app/globals.css`), dark + light themes
+
+## Anatomy
+
+| Path | What it is |
+| --- | --- |
+| `src/lib/data.ts` | **All content** — edit skills, roles, projects, links here |
+| `src/lib/ascii.ts` | Seeded generator for the background comment-block art |
+| `src/components/AsciiCanvas.tsx` | Measures the page, draws art + line numbers, carves out `[data-ascii-exclude]` zones |
+| `src/components/ExpandTable.tsx` | Mono tables whose rows expand in place (deep-linkable via `#hash`) |
+| `src/components/Mockup.tsx` | Hand-built UI vignettes shown inside project expansions |
+| `src/app/globals.css` | Theme variables, editor chrome, type scale — the design system |
+
+## Develop
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev        # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deploy
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+`next.config.ts` is set to `output: "export"` — `npm run build` emits a fully
+static site into `out/`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Vercel**: import the repo, zero config.
+- **GitHub Pages / Netlify / anywhere**: serve the `out/` directory.
 
-## Learn More
+## Content updates
 
-To learn more about Next.js, take a look at the following resources:
+Everything a recruiter reads lives in `src/lib/data.ts` (plus the hero/statement
+copy in `src/app/page.tsx`). Replace `public/Aryan_Vashishth_Resume.pdf` to
+update the downloadable resume.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+When the final domain is known, change `SITE_URL` in `src/lib/data.ts` — it
+feeds `metadataBase`, `sitemap.xml` and `robots.txt`. The OG link-preview image
+is generated at build time from `src/app/opengraph-image.tsx`; a styled 404
+ships as `src/app/not-found.tsx`.
