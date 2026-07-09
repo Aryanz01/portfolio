@@ -39,8 +39,14 @@ npm run dev        # http://localhost:3000
 `next.config.ts` is set to `output: "export"` — `npm run build` emits a fully
 static site into `out/`.
 
-- **Vercel**: import the repo, zero config.
-- **GitHub Pages / Netlify / anywhere**: serve the `out/` directory.
+- **GitHub Pages** (wired up): every push to `main` runs
+  `.github/workflows/deploy.yml`, which builds with
+  `NEXT_PUBLIC_BASE_PATH=/portfolio` and publishes to
+  <https://aryanz01.github.io/portfolio/>.
+- **Vercel / Netlify / custom domain**: import the repo (zero config) and the
+  site builds at the root — the base path only applies when
+  `NEXT_PUBLIC_BASE_PATH` is set. Update `SITE_URL` in `src/lib/data.ts` to the
+  new domain.
 
 ## Content updates
 
