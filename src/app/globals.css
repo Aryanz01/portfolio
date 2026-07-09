@@ -1196,8 +1196,19 @@ a {
     padding-top: 36px;
   }
 
+  /* a full-height hero is dead air on a narrow column — compress it */
+  .hero {
+    min-height: min(480px, 68vh);
+    min-height: min(480px, 68svh);
+    padding-bottom: 0.55em;
+  }
+
+  .giant-name {
+    bottom: -0.1em;
+  }
+
   .statement-wrap {
-    padding: 18vh 0 12vh;
+    padding: 12vh 0 10vh;
   }
 
   .xt-head {
