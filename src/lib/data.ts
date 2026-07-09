@@ -1,7 +1,10 @@
 /** All portfolio content, sourced from Aryan's resume (July 2026). */
 
-/** Change this once when the final domain is known — feeds metadata, sitemap, robots. */
-export const SITE_URL = "https://aryanz01.github.io";
+/** Base path baked in at build time (e.g. /portfolio on GitHub Pages). */
+export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
+/** Canonical site URL — feeds metadata, sitemap, robots. Change when moving to a custom domain. */
+export const SITE_URL = `https://aryanz01.github.io${BASE_PATH}`;
 
 export const LINKS = {
   email: "aryanvashishth04@gmail.com",
@@ -16,7 +19,7 @@ export const LINKS = {
   votingRepo: "https://github.com/Aryanz01/blockchain-based-voting-system",
   topsisPkg: "https://pypi.org/project/102203551-topsis/",
   dine3dDemo: "https://frontend-nine-sigma-24.vercel.app/3",
-  resume: "/Aryan_Vashishth_Resume.pdf",
+  resume: `${BASE_PATH}/Aryan_Vashishth_Resume.pdf`,
 } as const;
 
 /* ---------------------------------- skills --------------------------------- */
