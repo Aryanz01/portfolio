@@ -6,9 +6,9 @@ import { useEffect, useState } from "react";
 
 const TABS = [
   { href: "/", file: "home.ts" },
-  { href: "/skills/", file: "skills.ts" },
   { href: "/experience/", file: "experience.ts" },
   { href: "/projects/", file: "projects.ts" },
+  { href: "/skills/", file: "skills.ts" },
   { href: "/contact/", file: "contact.ts" },
 ];
 
