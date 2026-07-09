@@ -28,16 +28,22 @@ export function generateAscii(
       (e) => x < e.x + e.w && x + w > e.x && y < e.y + e.h && y + h > e.y
     );
 
+  // narrow grids (phones) get smaller boxes so the texture stays rich
+  const narrow = cols < 70;
+  const bandMin = narrow ? 7 : 10;
+  const bandVar = narrow ? 12 : 19;
+  const boxVar = narrow ? 5 : 8;
+
   let bx = 0;
   while (bx < cols - 6) {
-    const bw = Math.min(10 + Math.floor(rand() * 19), cols - bx);
+    const bw = Math.min(bandMin + Math.floor(rand() * bandVar), cols - bx);
     let y = Math.floor(rand() * 4);
     let guard = 0;
     while (y < rows - 1 && guard++ < 6000) {
       // Draw all randomness BEFORE deciding whether the box lands — keeps the
       // sequence stable regardless of exclusions.
       const dense = rand() < 0.14;
-      const h = dense ? 1 + Math.floor(rand() * 2) : 2 + Math.floor(rand() * 8);
+      const h = dense ? 1 + Math.floor(rand() * 2) : 2 + Math.floor(rand() * boxVar);
       const ch = STYLES[Math.floor(rand() * STYLES.length)];
       const innerV =
         !dense && bw > 8 && rand() < 0.5
