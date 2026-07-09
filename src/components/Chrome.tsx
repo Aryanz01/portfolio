@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const TABS = [
   { href: "/", file: "home.ts" },
@@ -19,11 +19,22 @@ function normalize(path: string) {
 export default function Chrome() {
   const pathname = usePathname();
   const [theme, setTheme] = useState<"dark" | "light">("dark");
+  const tabsRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     const t = document.documentElement.dataset.theme;
     if (t === "light" || t === "dark") setTheme(t);
   }, []);
+
+  // keep the active tab visible when the strip scrolls on small screens
+  useEffect(() => {
+    const strip = tabsRef.current;
+    const active = strip?.querySelector<HTMLElement>(".tab.on");
+    if (!strip || !active) return;
+    const target =
+      active.offsetLeft - (strip.clientWidth - active.offsetWidth) / 2;
+    strip.scrollTo({ left: Math.max(0, target) });
+  }, [pathname]);
 
   const flip = () => {
     const next = theme === "dark" ? "light" : "dark";
@@ -38,7 +49,7 @@ export default function Chrome() {
 
   return (
     <header className="chrome">
-      <nav className="tabs" aria-label="Sections">
+      <nav className="tabs" aria-label="Sections" ref={tabsRef}>
         {TABS.map((t) => {
           const active =
             t.href === "/" ? current === "/" : current.startsWith(t.href);
