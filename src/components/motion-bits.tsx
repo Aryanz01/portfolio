@@ -32,7 +32,7 @@ export function GiantWord({
       className={"giant " + className}
       style={
         {
-          fontSize: `clamp(88px, ${vw}vw, 560px)`,
+          fontSize: `clamp(56px, ${vw}vw, 560px)`,
           y: reduce ? 0 : y,
         } as CSSProperties
       }
