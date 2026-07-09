@@ -72,6 +72,8 @@
 
 html {
   scrollbar-color: var(--win-line) var(--bg);
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -192,7 +194,10 @@ a {
 .chrome-actions {
   display: flex;
   align-items: center;
-  padding-right: 10px;
+  padding: 0 10px 0 6px;
+  background: var(--chrome-bg);
+  border-left: 1px solid var(--chrome-line);
+  flex-shrink: 0;
 }
 
 .icon-btn {
@@ -284,6 +289,7 @@ a {
 
 .hero {
   min-height: calc(100vh - var(--chrome-h));
+  min-height: calc(100svh - var(--chrome-h));
   position: relative;
 }
 
@@ -331,7 +337,7 @@ a {
   font-weight: 520;
   line-height: 0.8;
   letter-spacing: -0.045em;
-  font-size: clamp(96px, 18.5vw, 470px);
+  font-size: clamp(64px, 18.5vw, 470px);
   color: var(--giant-hero);
   white-space: nowrap;
   z-index: 0;
@@ -519,6 +525,13 @@ a {
   align-items: start;
 }
 
+/* long rule strings and nowrap footers must never inflate grid tracks */
+.xp-body > *,
+.contact-grid > *,
+.mono-cols > * {
+  min-width: 0;
+}
+
 .xp-intro {
   color: var(--text);
   max-width: 64ch;
@@ -618,6 +631,12 @@ a {
 
 .frow dd {
   margin: 0;
+}
+
+.frow dd,
+.meta dd,
+.cell {
+  overflow-wrap: anywhere;
 }
 
 /* ------------------------------ skills ------------------------------ */
@@ -1203,6 +1222,10 @@ a {
 
   .meta > div {
     grid-template-columns: 96px 1fr;
+  }
+
+  .channels .frow {
+    grid-template-columns: 104px 1fr;
   }
 
   .mono-cols {
