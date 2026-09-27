@@ -176,7 +176,7 @@ export const EXPERIENCE: Experience[] = [
       "Six months owning the realtime conversation backend of Stimuler's speech-improvement product end-to-end: transport, LLM orchestration, voice infrastructure, and the ops tooling around it.",
     scope: [
       "Cut Conversation V3 p50 latency 23s → ~1.4s (~94%) by re-architecting the backend off Firebase Cloud Functions onto Bun + Hono with native WebSocket streaming; drove the system to upstream-bound via two cross-team optimisations.",
-      "Rebuilt voice calling server-side on Gemini Live after client-side Hume couldn't capture audio: 24kHz PCM streaming, 500ms barge-in stitching, dynamic RMS noise gating; killed Gemini's post-2-minute latency cliff; rolled out to ~3K users via SHA-1 bucketing.",
+      "Rebuilt voice calling server-side on Gemini Live after client-side Hume couldn't capture audio: 24kHz PCM streaming, 500ms barge-in stitching, dynamic RMS noise gating; killed Gemini's post-2-minute latency cliff; rolled out to ~30K users via SHA-1 bucketing.",
       "Architected V3's multi-LLM runtime with 4+ providers (OpenAI, GPT-4o, in-house models on Modal + vLLM), swappable live via Firestore config; Qwen3 output gates block regressions at zero latency cost.",
       "Built the calling-ops dashboard solo (Flutter Web, Firebase Auth); shipped a cross-session memory layer that LLM-summarises voice + chat into per-user profiles threaded into every prompt.",
       "Migrated ERS pronunciation drill scoring onto Stimuler's in-house model, off Microsoft's scoring API, preserving full realtime scoring.",
@@ -186,7 +186,7 @@ export const EXPERIENCE: Experience[] = [
       { label: "ROLE", value: "Full-Stack Engineer Intern" },
       { label: "PERIOD", value: "Jan 2026 – Jun 2026" },
       { label: "STACK", value: "Bun · Hono · WebSockets · Gemini Live · Firestore" },
-      { label: "RESULT", value: "p50 23s → ~1.4s (~94%) · voice live for ~3K users" },
+      { label: "RESULT", value: "p50 23s → ~1.4s (~94%) · voice live for ~30K users" },
     ],
     mock: "chat",
     mockTitle: "conversation-v3.preview",

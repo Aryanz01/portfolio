@@ -50,7 +50,7 @@ export default function Home() {
               <dd>
                 Software Engineer (Contract) @ Basethesis Labs: Synth, an AI
                 CFO on TallyPrime · Full-Stack Engineer Intern @ Stimuler:
-                realtime voice + LLM infrastructure for ~3K users
+                realtime voice + LLM infrastructure for ~30K users
               </dd>
             </div>
             <div className="xt-rule" aria-hidden="true" />
