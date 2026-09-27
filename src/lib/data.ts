@@ -11,7 +11,6 @@ export const LINKS = {
   phone: "+91 92160 69000",
   github: "https://github.com/Aryanz01",
   linkedin: "https://linkedin.com/in/aryan-vashishth-25ba47284",
-  leetcode: "https://leetcode.com/u/aryan_vashishth/",
   dexRepo: "https://github.com/Aryanz01/Dex",
   shopxarDemo: "https://dancing-entremet-a11d9c.netlify.app/",
   synthProduct: "https://kayess.chat.getsynth.io",
@@ -80,20 +79,20 @@ export const SKILL_COLUMNS: SkillColumn[] = [
 export const EDUCATION = {
   degree: "BE, Computer Engineering",
   school: "Thapar Institute of Engineering & Technology",
-  period: "May 2022 — May 2026",
+  period: "May 2022 – May 2026",
   detail: "CGPA 8.32 / 10 · Patiala, Punjab",
 };
 
 export const CERTIFICATIONS = [
   "AWS Certified AI Practitioner (AIF-C01)",
-  "Professional Certificate in Blockchain — IIT Kanpur · Jun — Oct 2024",
+  "Professional Certificate in Blockchain, IIT Kanpur · Jun – Oct 2024",
 ];
 
 export const ACHIEVEMENTS = [
   "Co-authored research paper on TGNN-based Ethereum fraud detection (under review)",
-  "Top 10% — Axis Moves Challenge 2025, among 20,000+ candidates nationwide",
-  "Runner-up — AIESEC Hackathon",
-  "Best Speaker & Narrator — TEDxTIET + Echoes Club",
+  "Top 10%, Axis Moves Challenge 2025, among 20,000+ candidates nationwide",
+  "Runner-up, AIESEC Hackathon",
+  "Best Speaker & Narrator, TEDxTIET + Echoes Club",
   "Mentored 10 juniors as TEDxTIET core developer",
   "Built the Echoes Club website; coordinated events with 300+ attendees",
 ];
@@ -122,20 +121,20 @@ export const EXPERIENCE: Experience[] = [
     id: "moveinsync",
     company: "MoveInSync",
     role: "Software Engineer · Full-time",
-    period: "Aug 2026 — Present",
+    period: "Aug 2026 – Present",
     focus: "Field App → Kotlin Multiplatform · AI alerting",
     intro:
-      "Full-time on MoveInSync's mobile platform — the Office and Field apps behind its enterprise employee-transport product. The work spans a 40+ module migration off Flutter, an AI layer over production alerting, and the security posture of the apps.",
+      "Full-time on MoveInSync's mobile platform: the Office and Field apps behind its enterprise employee-transport product. The work spans a 40+ module migration off Flutter, an AI layer over production alerting, and the security posture of the apps.",
     scope: [
       "Migrating the Field App's 40+ module codebase from Flutter to Kotlin Multiplatform, standardising the stack around shared business logic and native Android components.",
       "Built an AI intelligence layer over production alerting that cut alert noise by 83%.",
       "Resolved Crashlytics issues, lifting the app's crash-free rate from 99.6% to 99.8%.",
-      "Led VAPT security fixes across the mobile apps — 30+ vulnerabilities closed.",
+      "Led VAPT security fixes across the mobile apps, closing 30+ vulnerabilities.",
       "Built a highly configurable Security Sign-off workflow across the Office and Field applications.",
     ],
     meta: [
       { label: "ROLE", value: "Software Engineer, Full-time" },
-      { label: "PERIOD", value: "Aug 2026 — Present" },
+      { label: "PERIOD", value: "Aug 2026 – Present" },
       { label: "STACK", value: "Kotlin Multiplatform · Kotlin · Flutter · Android" },
       { label: "RESULT", value: "alert noise −83% · crash-free 99.6% → 99.8% · 30+ vulns fixed" },
     ],
@@ -144,21 +143,21 @@ export const EXPERIENCE: Experience[] = [
     id: "basethesis",
     company: "Basethesis Labs",
     role: "Software Engineer · Contract",
-    period: "Jun 2026 — Jul 2026",
-    focus: "Synth — an AI CFO on TallyPrime",
+    period: "Jun 2026 – Jul 2026",
+    focus: "Synth, an AI CFO on TallyPrime",
     intro:
-      "Synth is an AI CFO that reads and writes real client books in TallyPrime — 76 users on kayess.chat.getsynth.io. Unlike Zoho, Microsoft or ERPNext, Tally has no API, so the integration began by reverse-engineering its XML protocol — then making it safe for agents to post into live ledgers.",
+      "Synth is an AI CFO that reads and writes real client books in TallyPrime, with 76 users on kayess.chat.getsynth.io. Unlike Zoho, Microsoft or ERPNext, Tally has no API, so the integration began by reverse-engineering its XML protocol, then making it safe for agents to post into live ledgers.",
     scope: [
       "Own Synth's TallyPrime integration end-to-end, built on a reverse-engineered XML protocol.",
-      "Built a deterministic financial-statement engine — P&L, balance sheet, trial balance, ageing, TDS, GST — matched against Tally on 15 client books.",
+      "Built a deterministic financial-statement engine (P&L, balance sheet, trial balance, ageing, TDS, GST) matched against Tally on 15 client books.",
       "Turned Tally's flaky single-threaded XML gateway into a reliable production write path: half-open circuit breaker, single-flight mutex, month-windowed batched reads with byte + wall-clock caps.",
       "Root-caused and eliminated a reproducible OOM wedge coming from unbounded full-history exports.",
-      "Built the AI write-path safety model — REMOTEID identity, fail-closed dedup, phantom-write detection, resumable UNKNOWN-state bulk writes — so agents post into live client books without double-posts.",
+      "Built the AI write-path safety model (REMOTEID identity, fail-closed dedup, phantom-write detection, resumable UNKNOWN-state bulk writes) so agents post into live client books without double-posts.",
       "Worked directly with client CFOs and financial analysts; reverse-engineered how they run their books and validated the automation on live accounts.",
     ],
     meta: [
       { label: "ROLE", value: "Software Engineer, Contract" },
-      { label: "PERIOD", value: "Jun 2026 — Jul 2026" },
+      { label: "PERIOD", value: "Jun 2026 – Jul 2026" },
       { label: "STACK", value: "TypeScript · Node.js · Tally XML" },
       { label: "USERS", value: "76 · live client books" },
       { label: "PRODUCT", value: "kayess.chat.getsynth.io", href: LINKS.synthProduct },
@@ -171,21 +170,21 @@ export const EXPERIENCE: Experience[] = [
     id: "stimuler",
     company: "Stimuler",
     role: "Full-Stack Engineer · Intern",
-    period: "Jan 2026 — Jun 2026",
+    period: "Jan 2026 – Jun 2026",
     focus: "Realtime voice + LLM infrastructure",
     intro:
-      "Six months owning the realtime conversation backend of Stimuler's speech-improvement product end-to-end — transport, LLM orchestration, voice infrastructure, and the ops tooling around it.",
+      "Six months owning the realtime conversation backend of Stimuler's speech-improvement product end-to-end: transport, LLM orchestration, voice infrastructure, and the ops tooling around it.",
     scope: [
       "Cut Conversation V3 p50 latency 23s → ~1.4s (~94%) by re-architecting the backend off Firebase Cloud Functions onto Bun + Hono with native WebSocket streaming; drove the system to upstream-bound via two cross-team optimisations.",
-      "Rebuilt voice calling server-side on Gemini Live after client-side Hume couldn't capture audio — 24kHz PCM streaming, 500ms barge-in stitching, dynamic RMS noise gating; killed Gemini's post-2-minute latency cliff; rolled out to ~3K users via SHA-1 bucketing.",
-      "Architected V3's multi-LLM runtime with 4+ providers — OpenAI, GPT-4o, in-house models on Modal + vLLM — swappable live via Firestore config; Qwen3 output gates block regressions at zero latency cost.",
+      "Rebuilt voice calling server-side on Gemini Live after client-side Hume couldn't capture audio: 24kHz PCM streaming, 500ms barge-in stitching, dynamic RMS noise gating; killed Gemini's post-2-minute latency cliff; rolled out to ~3K users via SHA-1 bucketing.",
+      "Architected V3's multi-LLM runtime with 4+ providers (OpenAI, GPT-4o, in-house models on Modal + vLLM), swappable live via Firestore config; Qwen3 output gates block regressions at zero latency cost.",
       "Built the calling-ops dashboard solo (Flutter Web, Firebase Auth); shipped a cross-session memory layer that LLM-summarises voice + chat into per-user profiles threaded into every prompt.",
       "Migrated ERS pronunciation drill scoring onto Stimuler's in-house model, off Microsoft's scoring API, preserving full realtime scoring.",
-      "Shipped a self-healing, lazy per-user V2→V3 migration across 150+ topics — zero downtime, 40+ Jest tests.",
+      "Shipped a self-healing, lazy per-user V2→V3 migration across 150+ topics with zero downtime, 40+ Jest tests.",
     ],
     meta: [
       { label: "ROLE", value: "Full-Stack Engineer Intern" },
-      { label: "PERIOD", value: "Jan 2026 — Jun 2026" },
+      { label: "PERIOD", value: "Jan 2026 – Jun 2026" },
       { label: "STACK", value: "Bun · Hono · WebSockets · Gemini Live · Firestore" },
       { label: "RESULT", value: "p50 23s → ~1.4s (~94%) · voice live for ~3K users" },
     ],
@@ -197,20 +196,20 @@ export const EXPERIENCE: Experience[] = [
     id: "elc",
     company: "ELC · Thapar",
     role: "Research & Engineering Intern",
-    period: "Jun 2025 — Jul 2025",
+    period: "Jun 2025 – Jul 2025",
     focus: "TGNN fraud detection · 3M+ txn dataset",
     intro:
-      "An on-site research & engineering internship — leading a team of five building a temporal-graph pipeline that flags fraudulent Ethereum wallets, from raw chain data to a prediction API. The work became a co-authored paper, currently under review.",
+      "An on-site research & engineering internship, leading a team of five building a temporal-graph pipeline that flags fraudulent Ethereum wallets, from raw chain data to a prediction API. The work became a co-authored paper, currently under review.",
     scope: [
       "Led a team of 5 building a scalable TGNN-based Ethereum fraud-detection pipeline, end-to-end from data ingestion through prediction API.",
-      "Built on CUDA + PyTorch Geometric; optimised GPU pipelines with parallelisation and batch tuning — training time down 2.3× on 3M+ transactions.",
+      "Built on CUDA + PyTorch Geometric; optimised GPU pipelines with parallelisation and batch tuning, cutting training time 2.3× on 3M+ transactions.",
       "Engineered 8 wallet-level features with a 5-fold validation framework.",
       "Benchmarked temporal GNNs against static models and pivoted to GCN + LightGBM for stability, improving accuracy and recall by 30%.",
       "Co-authored the resulting research paper comparing temporal vs static graph models (under review).",
     ],
     meta: [
       { label: "ROLE", value: "Research & Engineering Intern, on-site" },
-      { label: "PERIOD", value: "Jun 2025 — Jul 2025" },
+      { label: "PERIOD", value: "Jun 2025 – Jul 2025" },
       { label: "STACK", value: "TGNN · GCN · LightGBM · CUDA · PyTorch Geometric" },
       { label: "STATUS", value: "Paper under review" },
       { label: "DEEP DIVE", value: "→ tgnn-fraud in projects.ts", href: "/projects/#tgnn-fraud" },
@@ -220,19 +219,19 @@ export const EXPERIENCE: Experience[] = [
     id: "dine3d",
     company: "Dine3D",
     role: "Software Developer Engineer · On-site",
-    period: "Jan 2025 — Mar 2025",
+    period: "Jan 2025 – Mar 2025",
     focus: "3D web apps · Next.js + WebGL",
     intro:
-      "Software developer engineer building a 3D web experience — Next.js, React and WebGL on the front, AWS underneath, and a proper CI/CD pipeline around it.",
+      "Software developer engineer building a 3D web experience: Next.js, React and WebGL on the front, AWS underneath, and a proper CI/CD pipeline around it.",
     scope: [
-      "Built a 3D web app with Next.js, React and WebGL — render latency cut by 40%.",
+      "Built a 3D web app with Next.js, React and WebGL, cutting render latency by 40%.",
       "Deployed on AWS EC2, S3 and DynamoDB for scalable, low-latency data access at 99.9% uptime.",
       "Implemented CI/CD pipelines via GitHub Actions and Docker, improving release speed by 25%.",
-      "Developed responsive, accessible UIs with Tailwind CSS — UX engagement up 35%.",
+      "Developed responsive, accessible UIs with Tailwind CSS, lifting UX engagement 35%.",
     ],
     meta: [
       { label: "ROLE", value: "Software Developer Engineer, on-site" },
-      { label: "PERIOD", value: "Jan 2025 — Mar 2025" },
+      { label: "PERIOD", value: "Jan 2025 – Mar 2025" },
       { label: "STACK", value: "Next.js · React · WebGL · Tailwind · AWS · Docker" },
       { label: "LIVE", value: "frontend-nine-sigma-24.vercel.app ↗", href: LINKS.dine3dDemo },
     ],
@@ -241,19 +240,19 @@ export const EXPERIENCE: Experience[] = [
     id: "web-spider",
     company: "Web Spider Solutions",
     role: "Web Development Intern · Remote",
-    period: "Dec 2024 — Jan 2025",
+    period: "Dec 2024 – Jan 2025",
     focus: "Frontend + AWS across client apps",
     intro:
       "A remote internship shipping frontend components and AWS-backed integrations across multiple client web apps, on a team of four delivering weekly.",
     scope: [
-      "Implemented and troubleshot frontend components for multiple web apps — load times down 10% via efficient asset delivery on Amazon S3.",
+      "Implemented and troubleshot frontend components for multiple web apps, cutting load times 10% via efficient asset delivery on Amazon S3.",
       "Resolved 10+ UI/UX issues and integrated backend APIs on EC2 with containerised services on ECR.",
       "Used SQS for asynchronous processing and DynamoDB for fast, scalable data storage.",
       "Collaborated with a team of 4 to deliver weekly feature updates.",
     ],
     meta: [
       { label: "ROLE", value: "Web Development Intern, remote" },
-      { label: "PERIOD", value: "Dec 2024 — Jan 2025" },
+      { label: "PERIOD", value: "Dec 2024 – Jan 2025" },
       { label: "STACK", value: "React · AWS (S3 · EC2 · ECR · SQS · DynamoDB)" },
     ],
   },
@@ -295,12 +294,12 @@ export const PROJECTS: Project[] = [
     mock: "flow",
     caption: "Canvas run · per-node SSE status",
     intro:
-      "A visual AI pipeline builder with a working execution engine: drag nodes onto a canvas, wire them into a DAG, hit Run — a FastAPI backend executes the graph in dependency order and streams every node's status back to the canvas live.",
+      "A visual AI pipeline builder with a working execution engine: drag nodes onto a canvas, wire them into a DAG, hit Run, and a FastAPI backend executes the graph in dependency order and streams every node's status back to the canvas live.",
     scope: [
-      "9 node types — Input, LLM, Condition, Math, API Request and more — defined as small config objects over one BaseNode abstraction.",
+      "9 node types (Input, LLM, Condition, Math, API Request and more) defined as small config objects over one BaseNode abstraction.",
       "Execution engine schedules with Kahn's topological sort; per-node executors pass values along edges.",
       "Live status over Server-Sent Events: running pulse, done with duration, error, skipped.",
-      "Condition nodes route a value down exactly one branch — the untaken branch's downstream nodes skip automatically.",
+      "Condition nodes route a value down exactly one branch; the untaken branch's downstream nodes skip automatically.",
       "{{ variable }} templating in Text nodes becomes input handles, interpolated at run time.",
       "LLM node calls the Anthropic Messages API, with a keyless mock mode so the demo runs anywhere.",
     ],
@@ -313,7 +312,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "dex",
-    name: "Dex — Exchange Engine",
+    name: "Dex: Exchange Engine",
     what: "Order book + matching engine",
     stack: "TypeScript · Node · Redis",
     where: "personal · GitHub",
@@ -322,7 +321,7 @@ export const PROJECTS: Project[] = [
     intro:
       "A realtime distributed exchange engine built to understand market microstructure properly: a heap-based order book with O(log n) insertion and best-price matching, driven by an event-driven engine on Redis Pub/Sub.",
     scope: [
-      "Heap-based order book — O(log n) insertion, best-price matching, partial fills, realtime trade-ID generation; sustained 10,000+ orders.",
+      "Heap-based order book: O(log n) insertion, best-price matching, partial fills, realtime trade-ID generation; sustained 10,000+ orders.",
       "Event-driven matching engine on Redis Pub/Sub.",
       "WebSocket layer streams live trade feeds to clients; trade data persists to PostgreSQL.",
       "Async order-processing pipeline with execution lifecycle tracking (open → matched → filled); a non-blocking event loop holds match latency consistent under concurrent submissions.",
@@ -342,9 +341,9 @@ export const PROJECTS: Project[] = [
     mock: "shop",
     caption: "Product viewer · AR preview",
     intro:
-      "A 3D e-commerce platform where products are inspected in 3D and previewed in your own room via AR — Three.js and model-viewer up front, Node.js and MongoDB behind.",
+      "A 3D e-commerce platform where products are inspected in 3D and previewed in your own room via AR. Three.js and model-viewer up front, Node.js and MongoDB behind.",
     scope: [
-      "3D product viewing with realtime customisation + AR previews via Three.js and model-viewer — engagement up 30% in pilot tests.",
+      "3D product viewing with realtime customisation + AR previews via Three.js and model-viewer, lifting engagement 30% in pilot tests.",
       "Cut model-load latency 40% via lazy loading and CDN caching.",
       "100% cross-device compatibility.",
     ],
@@ -365,7 +364,7 @@ export const PROJECTS: Project[] = [
     intro:
       "An end-to-end voting dApp: Solidity contracts handle voter registration, casting and tallying on Ethereum Sepolia, signed through MetaMask, with a React front-end on top.",
     scope: [
-      "Solidity smart contracts for voter registration, vote casting and tallying — 99% reliability.",
+      "Solidity smart contracts for voter registration, vote casting and tallying, with 99% reliability.",
       "MetaMask + Ethereum Sepolia integration; tamper-resistant vote recording in under 15s.",
       "React interface that cut user interaction time by 30%.",
     ],
@@ -387,7 +386,7 @@ export const PROJECTS: Project[] = [
       "An open-source implementation of TOPSIS (multi-criteria decision analysis), published on PyPI with production-ready validation and a standalone CLI.",
     scope: [
       "Published to PyPI as an installable, documented package.",
-      "Input validation, data pre-processing and result generation — computational time down 20%.",
+      "Input validation, data pre-processing and result generation, cutting computational time 20%.",
       "Command-line execution with automated CSV output; runs fully offline.",
     ],
     meta: [
@@ -405,10 +404,10 @@ export const PROJECTS: Project[] = [
     mock: "graph",
     caption: "Wallet graph · fraud scoring",
     intro:
-      "A temporal-graph pipeline that flags fraudulent Ethereum wallets — 3M+ transactions processed end-to-end, from ingestion to a prediction API, built with a team of five that I led. Now a co-authored paper under review.",
+      "A temporal-graph pipeline that flags fraudulent Ethereum wallets: 3M+ transactions processed end-to-end, from ingestion to a prediction API, built with a team of five that I led. Now a co-authored paper under review.",
     scope: [
       "End-to-end pipeline: ingestion → 8 wallet-level features → model → prediction API.",
-      "GPU pipeline on CUDA + PyTorch Geometric — training time cut 2.3× via parallelisation and batch tuning.",
+      "GPU pipeline on CUDA + PyTorch Geometric, with training time cut 2.3× via parallelisation and batch tuning.",
       "Benchmarked temporal GNNs vs static models; pivoted to GCN + LightGBM, improving accuracy and recall by 30%.",
       "Co-authored research paper, currently under review.",
     ],

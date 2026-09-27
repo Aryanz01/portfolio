@@ -8,7 +8,7 @@ import { GiantWord, Reveal } from "@/components/motion-bits";
 export const metadata: Metadata = {
   title: "projects.ts",
   description:
-    "Selected builds — FlowForge, a distributed exchange engine, ShopXar, a blockchain voting dApp, TOPSIS on PyPI and TGNN fraud detection.",
+    "Selected builds: FlowForge, a distributed exchange engine, ShopXar, a blockchain voting dApp, TOPSIS on PyPI and TGNN fraud detection.",
 };
 
 export default function ProjectsPage() {
@@ -48,7 +48,7 @@ export default function ProjectsPage() {
         <aside className="xp-side">
           <Mockup kind={p.mock} title={`${p.id}.preview`} />
           <div className="xp-caption">
-            <span>— {p.caption} </span>
+            <span>{p.caption} </span>
           </div>
         </aside>
       </div>
@@ -60,7 +60,7 @@ export default function ProjectsPage() {
       <GiantWord vw={22}>Projects</GiantWord>
       <Reveal className="over-giant">
         <ExpandTable
-          label="SELECTED PROJECTS — click a row"
+          label="SELECTED PROJECTS · click a row"
           head={["PROJECT", "WHAT", "STACK", "WHERE"]}
           cols="1.4fr 1.7fr 1.3fr 1fr"
           rows={rows}

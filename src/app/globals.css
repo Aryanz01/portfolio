@@ -78,6 +78,8 @@ html {
 
 body {
   margin: 0;
+  /* the mono face turns "--" into a dash glyph; keep hyphens literal */
+  font-variant-ligatures: none;
   padding-top: var(--chrome-h);
   background: var(--bg);
   color: var(--text);
@@ -291,16 +293,21 @@ a {
   min-height: calc(100vh - var(--chrome-h));
   min-height: calc(100svh - var(--chrome-h));
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  padding-bottom: 32px;
 }
 
 .headline {
   font-family: var(--font-sans), "Helvetica Neue", Helvetica, sans-serif;
-  font-size: clamp(42px, 6.2vw, 96px);
+  font-size: clamp(34px, min(6.2vw, 11svh), 96px);
   line-height: 1.02;
   letter-spacing: -0.035em;
   font-weight: 540;
   color: var(--headline);
-  padding-top: 64px;
+  padding-top: clamp(24px, 6svh, 64px);
   position: relative;
   z-index: 1;
 }
@@ -327,17 +334,16 @@ a {
 }
 
 .giant-name {
-  position: absolute;
-  right: calc(-1 * var(--pad-x) - 8px);
-  bottom: -0.16em;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   font-family: var(--font-sans), "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 520;
-  line-height: 0.8;
+  line-height: 0.86;
   letter-spacing: -0.045em;
-  font-size: clamp(64px, 18.5vw, 470px);
+  /* sized by width and height so both lines always fit the first screen */
+  font-size: clamp(56px, min(16vw, 24svh), 400px);
+  padding-bottom: 0.14em;
   color: var(--giant-hero);
   white-space: nowrap;
   z-index: 0;
@@ -400,7 +406,8 @@ a {
   color: var(--giant);
   white-space: nowrap;
   margin-left: -0.04em;
-  margin-bottom: -0.26em;
+  padding-bottom: 0.22em;
+  margin-bottom: 8px;
   position: relative;
   z-index: 0;
   pointer-events: none;
@@ -550,7 +557,7 @@ a {
 }
 
 .scope li::before {
-  content: "—";
+  content: "-";
   position: absolute;
   left: 2px;
   color: var(--dim);
@@ -606,7 +613,7 @@ a {
 }
 
 .xp-caption::after {
-  content: "————————————————————————————————————————————————————————————————————————";
+  content: "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------";
   color: color-mix(in srgb, var(--dim) 60%, transparent);
   overflow: hidden;
 }
@@ -1204,7 +1211,7 @@ a {
   }
 
   .giant-name {
-    bottom: -0.1em;
+    font-size: clamp(48px, 19vw, 200px);
   }
 
   .statement-wrap {

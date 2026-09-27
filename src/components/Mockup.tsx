@@ -21,7 +21,7 @@ const SCENES: Record<MockKind, React.ReactNode> = {
         <span className="pill">▼ 94%</span>
         <span className="pill dim">ws · streaming</span>
       </div>
-      <div className="bubble ai">How did the standup go — did you use the phrases we practised?</div>
+      <div className="bubble ai">How did the standup go? Did you use the phrases we practised?</div>
       <div className="bubble user">It went great. I led with the summary first!</div>
       <div className="bubble ai">
         Nice. Let&apos;s tighten your opener next<span className="mini-caret" />
@@ -143,12 +143,12 @@ const SCENES: Record<MockKind, React.ReactNode> = {
           <div className="strong">#18122</div>
           <div>0x4f…a9 ✓</div>
         </div>
-        <span className="link">——</span>
+        <span className="link">--</span>
         <div className="block">
           <div className="strong">#18123</div>
           <div>0x91…c4 ✓</div>
         </div>
-        <span className="link">——</span>
+        <span className="link">--</span>
         <div className="block cast">
           <div className="strong">#18124</div>
           <div>vote cast</div>
@@ -179,7 +179,7 @@ const SCENES: Record<MockKind, React.ReactNode> = {
           <span className="t-prompt">$ </span>topsis data.csv &quot;1,1,1,2&quot; &quot;+,+,-,+&quot; out.csv
         </div>
         <div className="dim">✓ validated · 4 criteria · 8 alternatives</div>
-        <div className="dim">✓ out.csv written — best alternative: A3 (0.82)</div>
+        <div className="dim">✓ out.csv written · best alternative: A3 (0.82)</div>
       </div>
       <div className="mock-foot">python · numpy · pandas · compute ▼20% · offline</div>
     </>

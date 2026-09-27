@@ -21,8 +21,8 @@ const mono = Fragment_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Aryan Vashishth — full-stack engineer & agentic AI builder",
-    template: "%s — Aryan Vashishth",
+    default: "Aryan Vashishth | full-stack engineer & agentic AI builder",
+    template: "%s | Aryan Vashishth",
   },
   description:
     "Full-stack engineer building realtime backends for AI-powered products: voice infrastructure, multi-LLM runtimes, and agent-safe write paths. Based in Bangalore, IN.",

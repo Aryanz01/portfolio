@@ -3,7 +3,7 @@ import { ImageResponse } from "next/og";
 export const dynamic = "force-static";
 
 export const alt =
-  "aryan-vashishth.ts — full-stack engineer & agentic AI builder";
+  "aryan-vashishth.ts | full-stack engineer & agentic AI builder";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 

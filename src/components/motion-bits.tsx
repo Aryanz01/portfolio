@@ -24,7 +24,7 @@ export function GiantWord({
     target: ref,
     offset: ["start end", "end start"],
   });
-  const y = useTransform(scrollYProgress, [0, 1], [36, -36]);
+  const y = useTransform(scrollYProgress, [0, 1], [14, -14]);
 
   return (
     <motion.h2

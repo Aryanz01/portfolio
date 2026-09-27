@@ -4,7 +4,7 @@ import { GiantWord, Reveal } from "@/components/motion-bits";
 
 export const metadata: Metadata = {
   title: "contact.ts",
-  description: "Get in touch with Aryan Vashishth — email, GitHub, LinkedIn.",
+  description: "Get in touch with Aryan Vashishth by email, GitHub, LinkedIn.",
 };
 
 /* tiny helpers to keep the fake-source markup readable */
@@ -52,7 +52,7 @@ export default function ContactPage() {
                   <P c=">" />
                 </div>
                 <div className="ln">{"    "}I&apos;m open to full-time roles, contracts and</div>
-                <div className="ln">{"    "}collaborations — especially realtime systems,</div>
+                <div className="ln">{"    "}collaborations, especially realtime systems,</div>
                 <div className="ln">{"    "}voice infrastructure and agentic AI.</div>
                 <div className="ln">
                   {"  "}
@@ -66,7 +66,7 @@ export default function ContactPage() {
                   <T c="p" />
                   <P c=">" />
                 </div>
-                <div className="ln">{"    "}Email me to set something up — I&apos;d love to</div>
+                <div className="ln">{"    "}Email me to set something up. I&apos;d love to</div>
                 <div className="ln">{"    "}hear what you&apos;re building.</div>
                 <div className="ln">
                   {"  "}
@@ -121,15 +121,6 @@ export default function ContactPage() {
                   <dd>
                     <a href={LINKS.linkedin} target="_blank" rel="noreferrer">
                       aryan-vashishth ↗
-                    </a>
-                  </dd>
-                </div>
-                <div className="xt-rule" aria-hidden="true" />
-                <div className="frow">
-                  <dt>/ LEETCODE</dt>
-                  <dd>
-                    <a href={LINKS.leetcode} target="_blank" rel="noreferrer">
-                      aryan_vashishth ↗
                     </a>
                   </dd>
                 </div>

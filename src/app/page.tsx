@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <section className="hero">
         <h1 className="headline">
-          <span className="sr-only">Aryan Vashishth — </span>
+          <span className="sr-only">Aryan Vashishth, </span>
           Full-stack engineer
           <br />
           &amp; agentic AI builder
@@ -21,7 +21,7 @@ export default function Home() {
       <section className="statement-wrap">
         <Reveal>
           <p className="statement">
-            The portfolio of Aryan Vashishth — a full-stack engineer building
+            The portfolio of Aryan Vashishth, a full-stack engineer building
             realtime backends &amp; agentic AI for production products, based
             in Bangalore&nbsp;(IN).
           </p>
@@ -40,7 +40,7 @@ export default function Home() {
             <div className="frow">
               <dt>/ CURRENTLY</dt>
               <dd>
-                Software Engineer @ MoveInSync — moving the Field App to
+                Software Engineer @ MoveInSync: moving the Field App to
                 Kotlin Multiplatform, AI-driven production alerting
               </dd>
             </div>
@@ -48,15 +48,15 @@ export default function Home() {
             <div className="frow">
               <dt>/ PREVIOUSLY</dt>
               <dd>
-                Software Engineer (Contract) @ Basethesis Labs — Synth, an AI
-                CFO on TallyPrime · Full-Stack Engineer Intern @ Stimuler —
+                Software Engineer (Contract) @ Basethesis Labs: Synth, an AI
+                CFO on TallyPrime · Full-Stack Engineer Intern @ Stimuler:
                 realtime voice + LLM infrastructure for ~3K users
               </dd>
             </div>
             <div className="xt-rule" aria-hidden="true" />
             <div className="frow">
               <dt>/ EDUCATION</dt>
-              <dd>BE Computer Engineering, Thapar Institute · 2022 — 2026</dd>
+              <dd>BE Computer Engineering, Thapar Institute · 2022 – 2026</dd>
             </div>
             <div className="xt-rule" aria-hidden="true" />
             <div className="frow">

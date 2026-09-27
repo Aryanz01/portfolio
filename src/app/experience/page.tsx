@@ -8,7 +8,7 @@ import { GiantWord, Reveal } from "@/components/motion-bits";
 export const metadata: Metadata = {
   title: "experience.ts",
   description:
-    "MoveInSync, Basethesis Labs, Stimuler and ELC — the roles where Aryan Vashishth shipped realtime and agentic systems.",
+    "MoveInSync, Basethesis Labs, Stimuler and ELC: the roles where Aryan Vashishth shipped realtime and agentic systems.",
 };
 
 export default function ExperiencePage() {
@@ -30,7 +30,7 @@ export default function ExperiencePage() {
             <>
               <Mockup kind={e.mock} title={e.mockTitle ?? `${e.id}.preview`} />
               <div className="xp-caption">
-                <span>— {e.caption} </span>
+                <span>{e.caption} </span>
               </div>
             </>
           )}
@@ -64,7 +64,7 @@ export default function ExperiencePage() {
       <GiantWord vw={16.5}>Experience</GiantWord>
       <Reveal className="over-giant">
         <ExpandTable
-          label="WHERE I'VE SHIPPED — click a row"
+          label="WHERE I'VE SHIPPED · click a row"
           head={["COMPANY", "ROLE", "PERIOD", "FOCUS"]}
           cols="1.2fr 1.5fr 1.1fr 1.6fr"
           rows={rows}
