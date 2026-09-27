@@ -40,16 +40,17 @@ export default function Home() {
             <div className="frow">
               <dt>/ CURRENTLY</dt>
               <dd>
-                Software Engineer (Contract) @ Basethesis Labs — building
-                Synth, an AI CFO on TallyPrime
+                Software Engineer @ MoveInSync — moving the Field App to
+                Kotlin Multiplatform, AI-driven production alerting
               </dd>
             </div>
             <div className="xt-rule" aria-hidden="true" />
             <div className="frow">
               <dt>/ PREVIOUSLY</dt>
               <dd>
-                Full-Stack Engineer Intern @ Stimuler — realtime voice + LLM
-                infrastructure for ~3K users
+                Software Engineer (Contract) @ Basethesis Labs — Synth, an AI
+                CFO on TallyPrime · Full-Stack Engineer Intern @ Stimuler —
+                realtime voice + LLM infrastructure for ~3K users
               </dd>
             </div>
             <div className="xt-rule" aria-hidden="true" />
@@ -61,8 +62,8 @@ export default function Home() {
             <div className="frow">
               <dt>/ HEADLINE</dt>
               <dd>
-                94% p50 latency cut on Conversation V3 · voice calling on
-                Gemini Live · multi-LLM orchestration across 4+ providers
+                83% less alert noise at MoveInSync · 94% p50 latency cut on
+                Conversation V3 · voice calling on Gemini Live
               </dd>
             </div>
           </dl>

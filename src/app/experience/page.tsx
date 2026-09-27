@@ -8,7 +8,7 @@ import { GiantWord, Reveal } from "@/components/motion-bits";
 export const metadata: Metadata = {
   title: "experience.ts",
   description:
-    "Basethesis Labs, Stimuler and ELC — the roles where Aryan Vashishth shipped realtime and agentic systems.",
+    "MoveInSync, Basethesis Labs, Stimuler and ELC — the roles where Aryan Vashishth shipped realtime and agentic systems.",
 };
 
 export default function ExperiencePage() {

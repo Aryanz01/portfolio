@@ -59,7 +59,7 @@ export const SKILL_COLUMNS: SkillColumn[] = [
       "Flutter / Dart",
       "Three.js / AR · WebGL",
       "Tailwind CSS",
-      "HTML / CSS",
+      "Kotlin Multiplatform",
       "Responsive design",
     ],
   },
@@ -81,7 +81,7 @@ export const EDUCATION = {
   degree: "BE, Computer Engineering",
   school: "Thapar Institute of Engineering & Technology",
   period: "May 2022 — May 2026",
-  detail: "CGPA 8.16 / 10 · Patiala, Punjab",
+  detail: "CGPA 8.32 / 10 · Patiala, Punjab",
 };
 
 export const CERTIFICATIONS = [
@@ -119,10 +119,32 @@ export type Experience = {
 
 export const EXPERIENCE: Experience[] = [
   {
+    id: "moveinsync",
+    company: "MoveInSync",
+    role: "Software Engineer · Full-time",
+    period: "Aug 2026 — Present",
+    focus: "Field App → Kotlin Multiplatform · AI alerting",
+    intro:
+      "Full-time on MoveInSync's mobile platform — the Office and Field apps behind its enterprise employee-transport product. The work spans a 40+ module migration off Flutter, an AI layer over production alerting, and the security posture of the apps.",
+    scope: [
+      "Migrating the Field App's 40+ module codebase from Flutter to Kotlin Multiplatform, standardising the stack around shared business logic and native Android components.",
+      "Built an AI intelligence layer over production alerting that cut alert noise by 83%.",
+      "Resolved Crashlytics issues, lifting the app's crash-free rate from 99.6% to 99.8%.",
+      "Led VAPT security fixes across the mobile apps — 30+ vulnerabilities closed.",
+      "Built a highly configurable Security Sign-off workflow across the Office and Field applications.",
+    ],
+    meta: [
+      { label: "ROLE", value: "Software Engineer, Full-time" },
+      { label: "PERIOD", value: "Aug 2026 — Present" },
+      { label: "STACK", value: "Kotlin Multiplatform · Kotlin · Flutter · Android" },
+      { label: "RESULT", value: "alert noise −83% · crash-free 99.6% → 99.8% · 30+ vulns fixed" },
+    ],
+  },
+  {
     id: "basethesis",
     company: "Basethesis Labs",
     role: "Software Engineer · Contract",
-    period: "Jun 2026 — Present",
+    period: "Jun 2026 — Jul 2026",
     focus: "Synth — an AI CFO on TallyPrime",
     intro:
       "Synth is an AI CFO that reads and writes real client books in TallyPrime — 76 users on kayess.chat.getsynth.io. Unlike Zoho, Microsoft or ERPNext, Tally has no API, so the integration began by reverse-engineering its XML protocol — then making it safe for agents to post into live ledgers.",
@@ -136,7 +158,7 @@ export const EXPERIENCE: Experience[] = [
     ],
     meta: [
       { label: "ROLE", value: "Software Engineer, Contract" },
-      { label: "PERIOD", value: "Jun 2026 — Present" },
+      { label: "PERIOD", value: "Jun 2026 — Jul 2026" },
       { label: "STACK", value: "TypeScript · Node.js · Tally XML" },
       { label: "USERS", value: "76 · live client books" },
       { label: "PRODUCT", value: "kayess.chat.getsynth.io", href: LINKS.synthProduct },
